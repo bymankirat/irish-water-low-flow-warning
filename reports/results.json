@@ -1,0 +1,192 @@
+{
+  "q95_m3s": 4.72,
+  "alert_level": 0.1,
+  "periods": {
+    "train": [
+      "2005-01-01",
+      "2021-09-30"
+    ],
+    "validation": [
+      "2021-10-01",
+      "2023-09-30"
+    ],
+    "test": [
+      "2023-10-01",
+      "2026-09-30"
+    ]
+  },
+  "test_days": 1089,
+  "test_low_flow_days": 141,
+  "roc_auc": 0.9613220815752461,
+  "pr_auc": 0.6099093812960983,
+  "simple_rule": {
+    "recall": 0.7163120567375887,
+    "precision": 0.7214285714285714,
+    "f1": 0.7188612099644128,
+    "false_alarm_days_per_year": 13.1,
+    "alert_days_per_year": 47.0,
+    "episodes": [
+      {
+        "start": "2024-07-21",
+        "end": "2024-09-25",
+        "length_days": 67,
+        "notice_days": null,
+        "full_week": false
+      },
+      {
+        "start": "2025-07-04",
+        "end": "2025-07-14",
+        "length_days": 11,
+        "notice_days": null,
+        "full_week": false
+      },
+      {
+        "start": "2025-08-08",
+        "end": "2025-08-28",
+        "length_days": 21,
+        "notice_days": null,
+        "full_week": false
+      },
+      {
+        "start": "2026-07-09",
+        "end": "2026-09-26",
+        "length_days": 80,
+        "notice_days": null,
+        "full_week": false
+      }
+    ],
+    "episodes_warned_ahead": 0,
+    "episodes_full_week": 0,
+    "median_notice_days": 0.0
+  },
+  "model": {
+    "recall": 0.9929078014184397,
+    "precision": 0.546875,
+    "f1": 0.7052896725440806,
+    "false_alarm_days_per_year": 38.9,
+    "alert_days_per_year": 85.9,
+    "episodes": [
+      {
+        "start": "2024-07-21",
+        "end": "2024-09-25",
+        "length_days": 67,
+        "notice_days": 7,
+        "full_week": true
+      },
+      {
+        "start": "2025-07-04",
+        "end": "2025-07-14",
+        "length_days": 11,
+        "notice_days": 7,
+        "full_week": true
+      },
+      {
+        "start": "2025-08-08",
+        "end": "2025-08-28",
+        "length_days": 21,
+        "notice_days": 7,
+        "full_week": true
+      },
+      {
+        "start": "2026-07-09",
+        "end": "2026-09-26",
+        "length_days": 80,
+        "notice_days": 7,
+        "full_week": true
+      }
+    ],
+    "episodes_warned_ahead": 4,
+    "episodes_full_week": 4,
+    "median_notice_days": 7.0
+  },
+  "combined": {
+    "recall": 0.9929078014184397,
+    "precision": 0.546875,
+    "f1": 0.7052896725440806,
+    "false_alarm_days_per_year": 38.9,
+    "alert_days_per_year": 85.9,
+    "episodes": [
+      {
+        "start": "2024-07-21",
+        "end": "2024-09-25",
+        "length_days": 67,
+        "notice_days": 7,
+        "full_week": true
+      },
+      {
+        "start": "2025-07-04",
+        "end": "2025-07-14",
+        "length_days": 11,
+        "notice_days": 7,
+        "full_week": true
+      },
+      {
+        "start": "2025-08-08",
+        "end": "2025-08-28",
+        "length_days": 21,
+        "notice_days": 7,
+        "full_week": true
+      },
+      {
+        "start": "2026-07-09",
+        "end": "2026-09-26",
+        "length_days": 80,
+        "notice_days": 7,
+        "full_week": true
+      }
+    ],
+    "episodes_warned_ahead": 4,
+    "episodes_full_week": 4,
+    "median_notice_days": 7.0
+  },
+  "episodes_total": 4,
+  "importance": {
+    "season_sin": 0.008644377241062706,
+    "rain_1d_mm": -0.0010323655805764664,
+    "days_since_5mm_rain": -0.0049097835305234264,
+    "flow_change_7d_pct": -0.007264006666814415,
+    "flow_today": -0.009639580932022728,
+    "rain_3d_mm": -0.010454797158350492,
+    "rain_14d_mm": -0.025287786645950237,
+    "rain_7d_mm": -0.028245539837797585,
+    "season_cos": -0.031006491612499153,
+    "rain_30d_mm": -0.03288324602762842,
+    "rain_90d_mm": -0.06278350519333267,
+    "flow_min_30d": -0.06931215994000253,
+    "rain_60d_mm": -0.07911740752697372,
+    "flow_mean_7d": -0.0814913433492861
+  },
+  "data_quality": {
+    "start": "2005-01-01",
+    "end": "2026-09-30",
+    "days": 7943,
+    "flow_missing_days": 89,
+    "rain_missing_days": 0,
+    "flow_missing_after_fill": 46,
+    "flow_missing_pct": 1.12
+  },
+  "seasonality": {
+    "Jan": 0.0,
+    "Feb": 0.0,
+    "Mar": 0.0,
+    "Apr": 0.0,
+    "May": 0.4,
+    "Jun": 5.8,
+    "Jul": 20.2,
+    "Aug": 28.9,
+    "Sep": 16.4,
+    "Oct": 0.9,
+    "Nov": 0.0,
+    "Dec": 0.0
+  },
+  "rain_memory": {
+    "1": 0.35,
+    "3": 0.406,
+    "7": 0.44,
+    "14": 0.478,
+    "30": 0.521,
+    "60": 0.572,
+    "90": 0.555
+  },
+  "demo_data": false
+}
